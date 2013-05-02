@@ -1,0 +1,103 @@
+
+body{margin:0;padding:0;color:#666;background:url('../images/home/b.gif') repeat;text-align:left;font:12px Tahoma}
+ul,li,dl,dt,dd,form,p{margin:0;padding:0;list-style:none}
+/*table input,select,textarea,option{font:100% Verdana;BORDER:1px solid #ccc;COLOR:#333;background:#fff;height:20px;line-height:20px;}
+.clear{clear:both;font-size:0;line-height:0;height:0}*/
+img{border:none}
+a{color:#666;text-decoration:none;}
+a:active,a:focus{outline:none;}
+a:hover{color:#f70;text-decoration:underline;cursor: pointer;}
+h1,h2,h3{margin:0;padding:0;display:inline;font-size:12px}
+div,table,td{word-break:keep-all;}
+
+
+#top{height:131px;overflow:hidden;padding-left:58px;}
+
+.menul{background:url('../images/home/menul.gif') no-repeat left top;}
+.menur{background:url('../images/home/menur.gif') no-repeat right top;height:38px;overflow:hidden;padding:0 0 0 30px;}
+#menu{background:url('../images/home/menu.gif') repeat-x left top;}
+#menu li{float:left;height:38px;background:url('../images/home/menuli.gif') no-repeat right top; padding:0 12px 0 10px;}
+#menu li a{float:left;display:inline;height:38px;line-height:38px;text-align:center;font-weight:bold;color:#fff;padding-left:20px;}
+#menu li h3{display:block;padding-right:20px;float:left}
+#menu li a:hover,#menu li a.now{text-decoration:none;background:url('../images/home/menuover.gif') no-repeat left top;}
+#menu li a:hover h3,#menu li a.now h3{background:url('../images/home/menuover2.gif') no-repeat  right top;}
+/*#menu li.last{background:none;}*/
+
+.container {
+	width:1000px;
+	margin:0px auto;
+	
+}
+.header {
+	background:#fff url('../images/home/sitebg.gif') repeat-x top left;
+	padding-left:10px; padding-right:10px;
+	padding-bottom:0px;
+}
+.right_side {
+	
+	height: 720px;
+	width: 265px;
+	float:right;
+	overflow:hidden;
+}
+.content {
+	
+	height: 720px;
+	width: 735px;
+	float:left;
+	overflow:hidden;
+}
+.footer {
+	
+	width:auto;
+	height:100px;
+	clear:both;
+}
+#search_text {
+	width:400px;
+	height:30px;
+	position:absolute;
+	margin-left:60px;
+	margin-top:80px;
+	font-size:24px;
+}
+.content #simple_info {
+	float:left;
+	margin-left:26px;
+	margin-right:0px;
+	margin-top:30px;
+	margin-bottom:10px;
+	display:inline;
+}
+.pagination {
+	float:right;
+	width:400px;
+}
+.content #simple_info p {
+	text-align:left;
+}
+#login {
+	position: absolute;
+	margin-left:800px;
+	margin-top:-100px;
+}
+#login a h2 {
+	font-size: 24px;
+}
+.vlength{
+	word-break:break-all;   
+	dispaly:block;
+	color: blue;
+	height: 30px;
+	font-weight:bold;
+}
+
+.hvlength{
+	font-size: 14px;
+	width:300px;
+}
+
+#highlight {
+	color: #F06;
+}
+

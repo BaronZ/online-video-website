@@ -1,0 +1,76 @@
+/* CSS Document */
+.top_title {
+	font-family: "微软雅黑";
+	font-size: 24px;
+	color: #03C;
+	font-weight: bold;
+	font-style: italic;
+}
+    .brand_top {
+	font-size: 10px;
+	color: #039;
+	font-family: "微软雅黑";
+	font-weight: bold;
+}
+	.username{
+    background-image:url(../images/login/username.gif);
+	background-position: 1px 1px;
+	background-repeat:no-repeat;
+	padding-left:20px;
+	height:20px;
+	FONT-SIZE: 12px;
+}
+	.password{
+    background-image:url(../images/login/password.gif);
+	background-position: 1px 1px;
+	background-repeat:no-repeat;
+	padding-left:20px;
+	height:20px;
+	FONT-SIZE: 12px;
+	}
+	
+	
+    .login_CN {
+	font-family: "微软雅黑";
+	font-size: 24px;
+	color: #06C;
+	font-style: italic;
+}
+    .login_US {
+	font-family: "Arial Black", Gadget, sans-serif;
+	color: #999;
+	font-style: italic;
+	font-size: 24px;
+}
+    .user {
+	font-family: "微软雅黑";
+	color: #069;
+	font-size: 18px;
+}
+    .error {
+	color: #C00;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+    .banquan {
+	font-size: 10px;
+	font-family: "微软雅黑";
+	color: #666;
+}
+   .pbtn1
+{	
+	border:solid 2px #dcdcdc;
+	padding:2px 5px 2px 28px;
+	color:#959595;
+}
+	.btn1
+{
+	background:url("../images/login/ok.gif") no-repeat 8px center;
+	background-color:#f9f9f9;
+}
+
+.btn3
+{
+	background:url("../images/login/reset.gif") no-repeat 8px center;
+	background-color:#f9f9f9;
+}

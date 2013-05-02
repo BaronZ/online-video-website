@@ -1,0 +1,15 @@
+.pagination{
+	position:relative;
+	margin-left:330px;
+}
+.pagination a{
+padding: 0 5px;
+border: 1px solid #9aafe5;
+}
+.pagination li{
+display: inline;
+}
+.pagination a:link {}     /* 未访问的链接 */
+.pagination a:visited {}  /* 已访问的链接 */
+.pagination a:hover {background-color:#999;}    /* 当有鼠标悬停在链接上 */
+.pagination a:active {}   /* 被选择的链接 */

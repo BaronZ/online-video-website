@@ -1,0 +1,18 @@
+#latestUpload{
+	margin-top:20px;
+	margin-bottom:20px;
+	width:735px;
+}
+#latestUpload_title{
+	background:url(../images/latestUpload_bg.png) no-repeat;
+	line-height:50px;
+	text-indent:90px;
+	height:60px;
+}
+#latestUpload_more{
+	margin-right:35px;
+	margin-top:5px;
+}
+#latestUpload a{
+	text-decoration:none;
+}

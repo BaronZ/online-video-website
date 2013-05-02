@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.3//EN" "http://www.opensymphony.com/xwork/xwork-validator-1.0.3.dtd">
+ <validators>
+ 	<field name="video.video_title">
+ 		<field-validator type="requiredstring">
+ 			<param name="trim">true</param>
+ 			<message>视频标题不能为空</message>
+ 		</field-validator>
+ 		<field-validator type="stringlength">
+ 			<param name="minLength">5</param>
+ 			<param name="maxLength">50</param>
+ 			<message>视频标题长度为5-50</message>
+ 		</field-validator>
+ 	</field>
+ 	<field name="video.video_info">
+ 		<field-validator type="stringlength">
+ 			<param name="trim">true</param>
+ 			<param name="maxLength">500</param>
+ 			<message>视频介绍最大长度为500</message>
+ 		</field-validator>
+ 	</field>
+</validators>

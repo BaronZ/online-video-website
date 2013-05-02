@@ -1,0 +1,13 @@
+#announcement_title{
+	background:url(../images/title_bg.jpg) no-repeat;
+	line-height:50px;
+	text-indent:90px;
+	height:60px;
+}
+#announcement dd{
+	text-indent:60px;
+	border-bottom:1px solid #333;
+}
+#announcement a{
+	text-decoration:none;
+}

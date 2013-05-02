@@ -1,0 +1,23 @@
+.content{
+	width:735px;
+	height:720px;
+}
+#videoShortImg {
+	border:solid 1px #666 ;
+	width:150px;
+	height:100px;
+}
+#videoShortInfo {
+	font-size:12px;
+	color:#666;
+	width:150px;
+}
+#simpleInfo{
+	height:200px;
+}
+#highlight {
+	color: #F06;
+}
+#videoShortInfo_title{
+	height:60px;
+}

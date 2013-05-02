@@ -1,0 +1,21 @@
+.myCollection_item{
+	margin-top:20px;
+	margin-left:10px;
+	text-indent:30px;
+	line-height:30px;
+	min-height:70px;
+	border-bottom:1px dashed #999;
+	overflow:hidden;
+}
+.myCollection_item img{
+	width:120px;
+	height:120px;
+	border:1px rgb(221,221,221) solid;
+}
+.time{
+	margin-left:30px;
+}
+.myCollection_item em{
+	margin-left:20px;
+	color:#666;
+}

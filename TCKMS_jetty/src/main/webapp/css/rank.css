@@ -1,0 +1,33 @@
+#rank {
+	position: relative;
+	display:block;
+	float:left;
+	width:300px;
+	height:300px;
+}
+#rank ol li {
+	list-style:decimal;
+	font-size: 16px;
+	color: #000;
+	line-height:25px;
+	padding-top: 5px;
+}
+
+
+#rank_ol p {
+	margin-left:-20px;
+	font-size: 30px;
+	color: #000;
+	line-height:80px;
+}
+#rank_ol p #top10 {
+	font-size: 46px;
+	color:#09F;
+}
+
+#play_jpg {
+	position:relative;
+	text-align:right;
+	bottom:-2px;
+	cursor:pointer;
+}

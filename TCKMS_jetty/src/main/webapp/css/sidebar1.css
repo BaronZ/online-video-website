@@ -1,0 +1,22 @@
+#rank_ol li{
+	line-height:180%;
+	list-style-type:decimal;
+}
+#rank_ol a{
+	color:#444;
+}
+.rightSide{
+	width:265px;
+}
+#rank_ol{
+	background:url(../images/rb.png) no-repeat;
+	height:600px;
+}
+#rank_ol h2{
+	line-height:60px;
+	text-indent:10px;
+	font-size:28px;
+}
+#top10{
+	color:#666;
+}

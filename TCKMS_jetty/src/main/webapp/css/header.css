@@ -1,0 +1,26 @@
+.header{
+	background:url(../images/tckms_logo.jpg);
+	width:1000px;
+	height:200px;
+}
+#searchBox{
+	position:absolute;
+	margin-left:530px;
+	margin-top:150px;
+	margin-left:250px\9;
+
+
+}
+#search_text{
+	height:30px;
+	width:300px;
+	background:transparent;
+	line-height:30px\9;
+}
+#searchButton{
+	width:150px;
+	height:42px;
+	color:#fff;
+	background:url(../images/home/bg31.jpg) no-repeat;
+	border:none;
+}

@@ -1,0 +1,58 @@
+#comment_issue .h50{
+	border-bottom:#CCC 1px solid;
+}
+#comment_issue textarea{
+	resize:none;
+	width:500px;
+	height:100px;
+}
+#comment_issue img{
+	vertical-align:top;
+	width:70px; height:70px;
+	float:left\9;
+}
+#comment_issue h2{
+	line-height:60px;;
+}
+.border-bottom{
+	border-bottom:#999 1px solid;
+}
+
+#comment_userComment{
+	padding-bottom:10px;
+}
+#comment_userComment .fr.mr50.mt10.mb5{
+	margin-bottom:0px;
+}
+.mt-50{
+	display:block;
+	width:300px;
+	margin-top:0px;
+	margin-left:130px\9;
+	margin-top:-70px\9;
+}
+.grey{
+	color:#CCC;
+}
+#videoInfo span{
+	display:inline-block;
+	width:150px;
+	text-align: right;
+	font-size:24px;
+}
+#videoInfo div{
+	font-size:18px;
+	line-height:195%;
+}
+#comment_userComment_detail{
+	margin-top:0px;
+}
+.w1000.m0a #videoInfo ul .cb.mt10 .fr.cb.w200 {
+	margin-top:-32px\9;
+}
+#comment_userComment p{
+	padding-bottom:10px;
+}
+#videoInfo h2,#videoInfo span{
+	font-weight:600\9;
+}

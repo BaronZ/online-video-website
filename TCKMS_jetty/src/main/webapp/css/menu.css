@@ -1,0 +1,24 @@
+#nav .l{ background:url('../images/left.jpg') no-repeat top; height:37px;width:85px; float:left}
+#nav .r{width:130px;background:url('../images/right.jpg') no-repeat right top;height:37px;float:left;}
+#nav li {float:left}
+#nav{ background:url(../images/bg.jpg) repeat-x top;height:60px;width:1000px; margin-bottom:20px;}
+#nav li .v{
+	width:157px;height:37px; line-height:32px;color:#000;display:block;
+	text-align:center;
+	cursor:pointer;
+	font-weight:600;
+}
+#nav li div a{
+	display:inline-block;
+	width:98px;
+	font-size:16px;
+	color:black;
+	text-align:center;	
+}
+#nav li div a:hover{
+	color:blue;
+}
+#nav li div{
+	width:350px;
+	position:absolute;
+}

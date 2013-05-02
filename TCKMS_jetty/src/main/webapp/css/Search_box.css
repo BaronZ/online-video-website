@@ -1,0 +1,25 @@
+input[class="btn31"]/*,button*/
+{
+	font-family:"Arial","Tahoma","微软雅黑","雅黑";
+	border:0px;
+	vertical-align:middle;
+	margin:8px;
+	line-height:18px;	
+	font-size:18px;
+}
+/* http://www.divcss5.com */
+#top .btn31
+{
+	width:150px;
+	height:42px;
+	line-height:18px;
+	font-size:18px;
+	color:#fff;
+	padding-left:16px;
+	background:url(../images/home/bg31.jpg) no-repeat left top;
+	padding-bottom:4px;
+	position:absolute;
+	margin-left:480px;
+	margin-top:77px;
+}
+

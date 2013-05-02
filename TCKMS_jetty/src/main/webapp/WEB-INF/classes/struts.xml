@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<constant name="struts.multipart.saveDir" value="tem"></constant>
+	<constant name="struts.i18n.encoding" value="utf-8"></constant>
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.multipart.maxSize" value="52428800000" />
+	<constant name="struts.action.extension" value="action,do,webwork" />
+
+	<package name="MyStruts" extends="struts-default">
+
+
+		<interceptors>
+
+			<!-- 登录拦截器 -->
+			<interceptor name="loginInterceptor"
+				class="com.and9.tckms.interceptor.LoginInterceptor" />
+
+			<!-- 视频上传拦截器 -->
+			<interceptor name="videoUpLoadInterceptor"
+				class="com.and9.tckms.interceptor.VideoUploadInterceptor" />
+
+			<!-- 视频播放拦截器 -->
+			<interceptor name="videoViewInterceptor"
+				class="com.and9.tckms.interceptor.VideoViewInterceptor" />
+
+		</interceptors>
+
+
+
+
+		<global-results>
+			<result name="reLogin">login.jsp</result>
+			<result name="noAuthority">noAuthority.jsp</result>
+		</global-results>
+
+
+		<action name="test">
+			<result>/a.jsp</result>
+		</action>
+
+
+		<action name="Home_*" class="com.and9.tckms.controller.HomeAction"
+			method="{1}">
+			<!-- <result name="success">/WEB-INF/jsp/video/index.jsp</result> -->
+			<result name="success">/WEB-INF/jsp/home/index.jsp</result>
+			<result name="videos">/WEB-INF/jsp/home/video_index.jsp</result>
+		</action>
+
+		<action name="l_*" class="com.and9.tckms.controller.LogAction"
+			method="{1}">
+			<result name="input">/login.jsp</result>
+			<result name="success" type="redirectAction">
+				${nextAction}
+			</result>
+		</action>
+
+
+		<!-- 上传 -->
+		<action name="upload_*Action" class="com.and9.tckms.controller.FileUploadAction"
+			method="{1}">
+
+			<result name="input">/WEB-INF/jsp/video/uploadVideo.jsp</result>
+			<result name="toVideo">/WEB-INF/jsp/video/uploadVideo.jsp</result>
+			<result name="success">/WEB-INF/jsp/video/success.jsp</result>
+			<result name="token">/WEB-INF/jsp/video/token.jsp</result>
+			<result name="error">/WEB-INF/jsp/video/error.jsp</result>
+
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="loginInterceptor" />
+			<interceptor-ref name="videoUpLoadInterceptor">
+				<param name="includeMethods">toVideo,upLoadVideo,toSaveVideo</param>
+			</interceptor-ref>
+
+		</action>
+
+		<!-- 评论&收藏 -->
+		<action name="cfajax_*" class="com.and9.tckms.controller.VideoAction"
+			method="{1}">
+			<result type="plainText">
+				<param name="charSet">utf-8</param>
+			</result>
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="loginInterceptor" />
+		</action>
+
+		<!-- 播放视频 -->
+		<action name="playVideo" class="com.and9.tckms.controller.VideoAction"
+			method="playVideo">
+			<result name="success">/WEB-INF/jsp/video/playVideo.jsp</result>
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="loginInterceptor" />
+			<interceptor-ref name="videoViewInterceptor">
+				<param name="includeMethods">playVideo</param>
+			</interceptor-ref>
+		</action>
+		<!-- 个人页面 -->
+		<action name="personal" class="com.and9.tckms.controller.UserAction">
+			<result>/WEB-INF/jsp/personal/personalPage.jsp</result>
+		</action>
+		<!-- 收藏&上传列表 -->
+		<action name="ajax_*" class="com.and9.tckms.controller.UserAction"
+			method="{1}">
+			<result type="plainText">
+				<param name="charSet">utf-8</param>
+			</result>
+		</action>
+		
+		  <action name="news_*" class="com.and9.tckms.controller.NewsAction" method="{1}">
+			<result name="init">/WEB-INF/jsp/news/news_index.jsp</result>
+			<result name="detail">/WEB-INF/jsp/news/news_detail.jsp</result>
+		</action>
+		
+		<action name="personal_set">
+			<result>/WEB-INF/jsp/personal/personalPage_set.jsp</result>
+		</action>
+		<action name="personal_info">
+			<result>/WEB-INF/jsp/personal/personalPage_info.jsp</result>
+		</action>
+	</package>
+</struts>    
